@@ -1,13 +1,12 @@
-import React from 'react'
-type profileProps  ={
-    name: string
+interface profileProps {
+    name?: string
     age: number
  
 }
-function Profile(props: profileProps) {
+function Profile({name,age}: profileProps) {
     return (
         <div>
-            I Am {props.name} , {props.age} years old
+            I Am {name || 'user'} , {age} years old
         </div>
     )
 }
