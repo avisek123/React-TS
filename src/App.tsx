@@ -5,7 +5,7 @@ import { Profile } from './components'
 function App() {
   return (
     <div>
-      <Profile name='Avisek Sahoo'/>
+      <Profile name='Avisek Sahoo' age={12} />
     </div>
   )
 }
