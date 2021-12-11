@@ -1,5 +1,5 @@
 import React from 'react'
-interface profileProps {
+type profileProps  ={
     name: string
     age: number
  
