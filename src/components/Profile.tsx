@@ -4,10 +4,10 @@ interface profileProps {
     name?: string
     age: number
     status:'Coder'| 'Manager' | 'Admin'
-   
+    children?:React.ReactNode
  
 }
-const  Profile :React.FC<profileProps>=  ({name,age,status,children}) =>{
+const  Profile =({name,age,status,children}: profileProps) =>{
     return (
         <div>
             I Am {name || 'user'} , {age} years old and I am {status}
