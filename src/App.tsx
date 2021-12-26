@@ -4,7 +4,7 @@ import { Greet, Profile } from './components'
 function App() {
   return (
     <div>
-      <Greet name={'Avisek'} />
+      <Greet name={'Avisek'} msgCount={20} isLoggedIn={false} />
 
       {/* <Profile name={'Avisek'} status={'Coder'}  age={12} />
       <Profile name={'Sarath'} status={'Coder'}  age={12} >

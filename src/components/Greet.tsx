@@ -1,12 +1,14 @@
 import React from 'react'
 
 interface greetProps {
-    name: string
+    name: string,
+    msgCount?: number,
+    isLoggedIn?: boolean
 }
-function Greet({name}:greetProps) {
+function Greet({name,msgCount,isLoggedIn}:greetProps) {
     return (
         <div>
-            <h2>Welcome {name}</h2>
+            <h2>{isLoggedIn ?  `Welcome ${name}, you have ${msgCount} Notifications` : `please login continue`}</h2>
         </div>
     )
 }
