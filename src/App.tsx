@@ -1,6 +1,7 @@
 import { Greet } from './components'
 import { Button } from './components/Button'
 import { Heading } from './components/Heading'
+import { Input } from './components/Input'
 import { Oscar } from './components/Oscar'
 
 
@@ -15,10 +16,14 @@ function App() {
 
       <Heading>Oscar is a wild dog</Heading>
       </Oscar>
-      <Button
+      {/* <Button
       onClick={(e,i)=>{
         console.log('clicked',e,i)
       }}
+      /> */}
+      <Input
+      value=''
+      onChange={(e)=>{console.log(e.target.value)}}
       />
 
      
