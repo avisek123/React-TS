@@ -1,5 +1,6 @@
 import { Greet } from './components'
 import { Button } from './components/Button'
+import { Container } from './components/Container'
 import { Heading } from './components/Heading'
 import { Input } from './components/Input'
 import { Oscar } from './components/Oscar'
@@ -24,6 +25,14 @@ function App() {
       <Input
       value=''
       onChange={(e)=>{console.log(e.target.value)}}
+      />
+      <Container
+      styles={{
+        backgroundColor:'red',
+        color:'white',
+        padding:'10px',
+        border:'1px solid black'
+      }}
       />
 
      
