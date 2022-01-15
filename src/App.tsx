@@ -1,4 +1,5 @@
 import { Greet, Person, PersonList, Profile } from './components'
+import { Status } from './components/Status'
 
 
 function App() {
@@ -26,8 +27,9 @@ function App() {
   return (
     <div>
       <Greet name={'Avisek'} msgCount={20} isLoggedIn={false} />
-      <Person name={personName} />
-      <PersonList names={nameList} />
+      {/* <Person name={personName} />
+      <PersonList names={nameList} /> */}
+      <Status status='online' />
 
       {/* <Profile name={'Avisek'} status={'Coder'}  age={12} />
       <Profile name={'Sarath'} status={'Coder'}  age={12} >
